@@ -1,0 +1,104 @@
+{
+  "5af29bcd-d05b-4505-b72f-8102c3f9e0d5": {
+    "patientId": "4888301",
+    "pregnancyId": "80fc5bd3-c30b-4c1d-97db-4feab91d4521",
+    "visitId": "5af29bcd-d05b-4505-b72f-8102c3f9e0d5",
+    "visitDate": "2020-02-13",
+    "complaints": "None",
+    "remarks": "Initial visit, HIV positive",
+    "referred": false,
+    "weight": 100.0,
+    "itnInUse": true,
+    "isActive": true,
+    "bloodPressure": {
+      "systolicBP": 120,
+      "diastolicBP": 40
+    },
+    "fundalHeight": 9.0
+  },
+  "c482a9fd-aee5-4f16-ba9d-e4b5fc637e87": {
+    "patientId": "4888301",
+    "pregnancyId": "80fc5bd3-c30b-4c1d-97db-4feab91d4521",
+    "visitId": "c482a9fd-aee5-4f16-ba9d-e4b5fc637e87",
+    "visitDate": "2020-03-13",
+    "complaints": "Lower back pain",
+    "remarks": "Patient craving tartar sauce",
+    "referred": false,
+    "weight": 110.0,
+    "itnInUse": false,
+    "isActive": true,
+    "bloodPressure": {
+      "systolicBP": 125,
+      "diastolicBP": 30
+    },
+    "fundalHeight": 11.0
+  },
+  "ac8fe49c-4628-4913-af4b-8872a6a2e52f": {
+    "patientId": "4888301",
+    "pregnancyId": "80fc5bd3-c30b-4c1d-97db-4feab91d4521",
+    "visitId": "ac8fe49c-4628-4913-af4b-8872a6a2e52f",
+    "visitDate": "2020-03-20",
+    "complaints": "",
+    "remarks": "",
+    "referred": false,
+    "weight": 130.0,
+    "itnInUse": false,
+    "isActive": true,
+    "bloodPressure": {
+      "systolicBP": 160,
+      "diastolicBP": 45
+    },
+    "fundalHeight": 16.0
+  },
+  "7e55e7a4-7ea2-42c0-aa2e-9d3eb959044e": {
+    "patientId": "4888301",
+    "pregnancyId": "80fc5bd3-c30b-4c1d-97db-4feab91d4521",
+    "visitId": "7e55e7a4-7ea2-42c0-aa2e-9d3eb959044e",
+    "visitDate": "2020-04-01",
+    "complaints": "",
+    "remarks": "",
+    "referred": false,
+    "weight": 130.0,
+    "itnInUse": false,
+    "isActive": true,
+    "bloodPressure": {
+      "systolicBP": 150,
+      "diastolicBP": 40
+    },
+    "fundalHeight": 22.0
+  },
+  "3e5b7fdd-3c2f-401b-b9e3-e3a2c7662e62": {
+    "patientId": "4888301",
+    "pregnancyId": "80fc5bd3-c30b-4c1d-97db-4feab91d4521",
+    "visitId": "3e5b7fdd-3c2f-401b-b9e3-e3a2c7662e62",
+    "visitDate": "2020-04-02",
+    "complaints": "",
+    "remarks": "",
+    "referred": false,
+    "weight": 140.0,
+    "itnInUse": false,
+    "isActive": true,
+    "bloodPressure": {
+      "systolicBP": 120,
+      "diastolicBP": 60
+    },
+    "fundalHeight": 22.0
+  },
+  "90983647-db02-43e1-a57b-57eba7996b1c": {
+    "patientId": "4888301",
+    "pregnancyId": "80fc5bd3-c30b-4c1d-97db-4feab91d4521",
+    "visitId": "90983647-db02-43e1-a57b-57eba7996b1c",
+    "visitDate": "2020-04-13",
+    "complaints": "Lower back pain",
+    "remarks": "Patient craving tartar sauce",
+    "referred": false,
+    "weight": 150.0,
+    "itnInUse": false,
+    "isActive": true,
+    "bloodPressure": {
+      "systolicBP": 120,
+      "diastolicBP": 60
+    },
+    "fundalHeight": 30.0
+  }
+}

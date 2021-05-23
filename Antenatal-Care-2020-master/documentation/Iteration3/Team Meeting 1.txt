@@ -1,0 +1,112 @@
+***
+Cameron Rothwell
+This is a messy notes file from our 1st team meeting
+***
+
+- First of all, need to confirm that we have three use cases working: Retrieve info from the consulting register, record information about the patients visit****, and display information from previous visit.
+	- split up view into sub files. instead of a massive block of text
+	- should refactor this iteration
+	- 
+
+- Biggest thing we should talk about: Refactoring MedicalInformation
+	- What is the current problem with it and how to do we fix it?
+	- refactor (to read only and update from visit?), change name. he really didn't seem to like the name MedicalInformation
+	- update methods
+
+	- if read-only, need to redesign the initial visit. Also need to redesign UI if it's read-only to actually look good. So quite a few changes
+	- patient was read-only, medical was editable. But we need to change it to 
+
+
+	Refactoring it? We currently have a medicalinfo, visit, pregnancy classes
+	- all three still should exist. no need to rename it either
+	- Edit: We are going to refactor it
+
+- Sickling, TT, PMTCT, IPT. Are those needed?
+	- we are adding these, it should be fairly easy. We can do this this iteration.
+
+- error checking
+
+- fix genericservice, will take extra time
+
+view split could take an hour
+view refactoring much longer
+error checking on visit
+
+- Start monthly report use case
+
+---------------------------------
+Issues Needed:
+
+
+
+Use Case: Displaying stored information on the patient
+- Refactor MedicalInformation to Patient Information
+	- Why? Vague name
+	- How:
+		- refactor in code and diagrams
+- Update the UI to reflect changes to Patient Information
+	- Use Case: Displaying information on the patient
+	- Why? Our UI is currently confusing and doesn't allow for accurate data display and data entry
+	- How:
+		- Make the Patient Information tab read-only
+		- Change the fields to make it obvious to the user that they are read-only
+- Clean the UI Code
+	- Use Case: Displaying patient information
+	- Why? We currently have one huge class for all of the UI
+	- How:
+		- Split UI into classes for each tab, with one class to connect them
+
+Use Case: Storing visit information
+- Remove Redundant data from Visit, Patient Information, and Pregnancy
+	- Why? It is confusing and gives opportunity for more errors
+	- How:
+		- remove redundant fields in diagrams and individual classes
+		- update methods and constructors to reflect the new fields
+- Add Classes for Sickling, PMCTC, TT, IPT, Dose
+	- Why? We need to include this information
+	- How:
+		- Create classes for each, and tie them to the Patient Information class
+- Clean up genericService
+	- Why? There are unused methods
+
+Use Case: Monthly Report
+- Create methods necessary for generating the information needed for the monthly report
+	- Why? To start on Monthly Report use case
+	-
+ 
+--------------------------
+- UI needed work, 
+	- patient view read-only. 
+
+- Are there any issues left with the classpath/settings stuff?
+	-
+
+- How much work do you guys think all of that will be?
+	-
+
+- What to do over break?
+	- 
+
+- have all final edits been pushed to iteration 2?
+	- 
+
+- merge to master at the end
+----------------------------
+- What I'm thinking so far: 
+	- Dejan for refactoring medicalInformation and fixing UI
+	- Josh/Joe for monthly report use case
+- Or: 
+	- Josh/Joe on medicalinformation/sickling,tt,pmtct,ipt/
+	- Dejan on monthly report
+
+
+- The direction given in the overview of iterations document was pretty vague
+
+
+
+
+
+- create issues
+- assign people to issues
+- create branches
+- create a document for iteration 3 showing what we will be working on

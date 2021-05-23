@@ -1,0 +1,24 @@
+***
+Cameron Rothwell
+This is a messy notes file from our 3rd team meeting
+***
+
+What to talk about?
+- How's progress coming along?
+	- Progress is great so far. 
+
+- Any problems that have emerged?
+
+
+Josh thought he lost a bunch of code, github dekstop lost all of the changes when switching branches. 1.5h worth of work that was just gone, but luckily there was a cache that was made in between switching branches so he was able to salvage it after 30m of work
+- dejan has had trouble figuring out where the data for the monthly report is actually coming from. this was pretty uncertain to start out with, which is why I only put one person on it
+- There was a lot of work this iteration, so I had frequent team meetings, even outside of lab hours, to make sure we were still on track
+- (potentially mention) windowbuilder may have caused problems, because it generates everything in one page, and we needed to split up the pages. Will windowbuilder still work when split up? Yes, it did. And we adjusted everything manually afterwards.
+
+- Common patient UI??? What is that?
+- I have asked the other project leaders
+
+
+Next iteration:
+- list of visits
+... etc

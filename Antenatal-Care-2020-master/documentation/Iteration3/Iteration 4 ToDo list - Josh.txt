@@ -1,0 +1,27 @@
+TO DO NEXT ITERATION
+
+- Update Pregnancy so that getActive only returns first active (should only be)
+
+- Possibly refactor out all wrapper classes
+  - Determine which classes would work better as primatives
+  - Determine which may need nullable values
+
+- Refactor Visit controller
+  - Rewrite newVisit method to be more useful
+
+- Refactor VisitService
+  - There should only ever be one active pregnancy. Returning a list causes a lot of problems
+
+- Hide Patient information if no visit is found
+
+- Clean up PatientView and set left hand side to constrain against middle of the window
+
+- Figure out a better way to navigate tab panel in code. Currently doing weird math to navigate out of visit view
+
+- Determine new layout/design for Visit view to account for prepopulated information
+  - Redesign Visit view
+  - Add more granular error checking for input
+
+- Figure out ways to use JUnit to test front end
+
+- Get Patient Info page to populate with new information after successfully saving a new visit

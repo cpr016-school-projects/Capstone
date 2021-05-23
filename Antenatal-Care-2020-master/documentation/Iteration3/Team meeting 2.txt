@@ -1,0 +1,42 @@
+***
+Cameron Rothwell
+This is a messy notes file from our 2nd team meeting
+***
+
+Team meeting topics:
+
+- Set up a consistent meeting day and time
+
+- Check in with progress on programming
+- How is Dejan doing?
+	- Progress?
+		- has the chart up but not really any implementation
+	- Problems?
+		- needs some of the classes to be created (sickling, etc)
+	- When to work?
+- How is the programming pair doing?
+	- Progress?
+		- nothing code-wise
+		- created domain model
+	- Problems?
+	- When to work?
+
+
+- I would like one more group meeting. Friday pref
+	- 3:00pm friday
+
+- send email about hemoglobin
+
+- ask about the monthly report to consulting register
+	- if we make a json though, then it will likely change. 
+	- there will be some sort of monthly report input, because it won't do it automatically
+	- where does the output go? 
+	- ask project leaders about this. Will it go to a database? 
+
+
+- i need to do a lot of documentation
+- one new model/graph
+	- define major methods and attributes and whether they are public and private. similar to domain model. (class model)
+- 
+
+

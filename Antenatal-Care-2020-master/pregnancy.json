@@ -1,0 +1,11 @@
+{
+  "80fc5bd3-c30b-4c1d-97db-4feab91d4521": {
+    "pregnancyId": "80fc5bd3-c30b-4c1d-97db-4feab91d4521",
+    "patientId": "4888301",
+    "gestation": 6,
+    "expectedDeliveryDate": "2020-09-02",
+    "hemoglobin0": 56.0,
+    "hemoglobin36": 0.0,
+    "isActive": true
+  }
+}

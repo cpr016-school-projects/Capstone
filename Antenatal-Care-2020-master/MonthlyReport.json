@@ -1,0 +1,53 @@
+{
+  "18881bd3-c081-42a6-befa-93997b78bde5": {
+    "monthlyReportID": "18881bd3-c081-42a6-befa-93997b78bde5",
+    "month": 3,
+    "year": 2020,
+    "numRegistrants": 0,
+    "numAttendances": 0,
+    "numMaking4thVisit": 0,
+    "numBelow5ft": 0,
+    "ageAtReg": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "hemoglobinAtRegAnd36": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "parityCount": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "durationPregnancyAtReg": [
+      0,
+      0,
+      0
+    ],
+    "iptCounts": [
+      0,
+      0,
+      0
+    ],
+    "TTVaccine2Plus": 0,
+    "pmtctCounts": [
+      0,
+      0,
+      0
+    ],
+    "ITNCounts": [
+      0,
+      0
+    ]
+  }
+}
