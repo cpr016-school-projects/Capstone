@@ -1,0 +1,142 @@
+Starting at App.java
+- App creates a new example1service, which creates a new citemdao, 
+	- citemdao creates a new map and a new filename or takes a filename and passes it to jsondao
+	- jsondao reads/creates a new json file based on the name
+- App creates a new citemview(which is like a menu), and creates a scanner
+- App creates a new citemcontroller with the example1service and the citemview as input.
+- App calls a menu loop in citemcontroller that displays a menu and reads the input until exit is called, 
+	- for each choice, executeChoice() is called
+	
+What will I need to add?
+- want to separate model, view, controller
+- I will copy and paste his example files in a different folder, and copy files as necessary
+- do not include any UI operations with classes that model data. so if I change ui, all the data is there.
+View: (citemview)
+- Main View: 
+	- Options: add customer, add inventory, add stock, place order, display orders for customer, display inventory, display customers. 
+	- Main view will be one class. It will basically be citemview, except "display menu" has different options
+	- Order menu is as such:
+		- first, goes to "add customer name", then calls provideorderaccess()
+		- ProvideOrderAccess() has options:
+			- Add an item to the order?
+			- exit
+Controller: (citemcontroller)
+- Main Controller - basically cItemController, except it will have another variable "Which View", and will loop call "display menu" methods depending on which menu should be active
+	- Since this is an int-based menu, "which view" will add 10*x based on which view it is. NOTE that if I have more than 10 options for any menu, I need 100*x
+	- Will call "execute choice" based on the choice made, which will always call methods in my service class(model)
+	EDIT: I don't need different views. I will just have the normal 1-10 options. 
+Model: (citemdao/jsondao)
+- service class will have methods to handle data, called from controller
+- broken up into three sections:
+	- methods to handle customer data
+		- add customer
+		- display customers
+	- methods to handle inventory data
+		- add inventory
+		- add a property "stock" to every item, addStock will affect that.
+	- methods to handle order data
+		- display orders for customer
+- cItem is split into:
+	- Customer
+	- Order
+	- Item
+	- Each of these is an object of one order, customer, or item from the json. 
+- citemDao is split into
+	- ItemDao
+	- CusDao
+	- OrderDao
+How will I manage orders for a customer?
+- Should I have a customer file be customer name, then all of their orders?
+	- Could use customer ID as filename
+- should I have one big file of customers? Then where would I store the orders?
+-
+
+i think I am going to go with one big customer file, with a list of that customer's order IDs and the date they were placed under each customer
+it would allow for easy "Display Orders for Customer" calls, and "display customers" calls
+then separate files for orders and inventory
+
+What data will they each have?
+Customer: id, name, address, order ids[]
+Item: id, description, stock
+Order: id, date, items[][] [id, amt]
+
+How will I get the data for the methods I need?
+placeOrder: needs a customer id and item ids. adds the order number to the specified customer's order list. 
+	- Then, I will have the placeOrder method create an arraylist of items for intermediate storage, then an array from the arraylist, that will then be added to the order. 
+display orders for customer: check each order ID in customer to see if it's in the date range
+addstock: 
+
+How do I attack this?
+- rename everything for customer. Create copies of classes I think I will need multiple of - Done
+- edit view first
+- then controller 
+	- providecitemaccess,
+	- execute choices
+- then service1 for methods to execute
+
+- so I have addOrder() which adds the order ID to customer
+- I have addItems() in Order which adds items and amt to the order array
+- order has a long[][], that stores item, amt arrays. Switch all from Long[] to Long[][]
+- Service1.addOrderItems() Should have two inputs: orderID and long[][]
+- Order.addItems() should have 1 input: The long[][], which is then appended to the existing array
+
+- I don't want auto IDs, I want user-input ids. That way, they just use the ID to refer to the customer. 
+
+How do I get data from an item?
+- it is stored in a map, which CusDao has methods to retrieve. 
+- cusdao.find(id).id should return the customer id. I can iron out the details later
+
+Where is the collections stored? 
+How does calling .add() on Generic Dao work?
+- Well, objects that implement interfaces are ALL called it seems, when the interface method is called. So I wouldn't want to call .find() for only item, if it calls everything.
+- This is a problem. Do I have three separate collections or only one?
+- I have three separate collec
+---------------------------------
+X create constructors for the three objects
+X needs default constructor as well, and the data needs to line up perfectly with the json in order to be read in.
+X create the methods from controller in service1
+X create the get/set for variables in item/cus/order
+X create the Dao methods for these 
+X set up the json files(in dao?)
+X will have to import item/order itemdao/orderdao into classes that use them
+
+FIXES:
+X change additem to order menu numbers. switch them
+X nextLine() from ReadLineWithPrompt is eating the previous newline characters that the other methods did not consume
+X add a failure state for display orders. It just hangs.
+X adding stock to an item did nothing. Need to add dao.update for each method that changes the json.(with exception to dao.add, that does it automatically). Turns out to be just addstock, addorderitems, and the first part of placeorder(updates customer)
+X stock still isn't updating? It's because I was calling update(itemDao.find(id)), and not update(newitem)
+- need to delete order if it fails to add items
+X seems like the order isn't being added correctly to customer
+X display orders not working
+X add display orders customer id checking
+X add item id and amt checking
+
+
+Error checking/misc
+X figure out if I need to call itemDao.update
+- move date error checking to new readDatewithprompt()
+X add alphanumeric error checking to string/line methods
+X add error checking to all inputs stuff
+X all find() methods
+X addstock can be negative integer, make sure it doesn't take away more than it exists
+X I do not want any user-input ids to be equal to a negative number
+X test it(given his instructions)
+
+Javadoc stuff:
+X every.. method...
+
+Hand-in:
+X re-read instructions
+X delete commented out code
+X delete //DELETE LATER comments
+X delete old javadoc stuff
+X Take screenshots of error checking
+X proof that it is a private repository to the best of my knowledge
+X compile arguments
+X add him to github
+X add inline comments
+X convert .docx files to .pdf
+X add more to mvc.pdf
+
+All Done!

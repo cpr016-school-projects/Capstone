@@ -1,0 +1,22 @@
+-classpath
+'C:/Users/Ender/.m2/repository/com/google/code/gson/gson/2.8.0/gson-2.8.0.jar'
+-encoding
+'UTF-8'
+-protected
+-sourcepath
+'c:/Users/Ender/Google Drive/School/Capstone/Assignment 1/src/main/java'
+-author
+-bottom
+'Copyright &#169; 2020. All rights reserved.'
+-charset
+'UTF-8'
+-d
+'c:/Users/Ender/Google Drive/School/Capstone/Assignment 1/target/site/apidocs'
+-docencoding
+'UTF-8'
+-doctitle
+'example1 0.0.1-SNAPSHOT API'
+-use
+-version
+-windowtitle
+'example1 0.0.1-SNAPSHOT API'

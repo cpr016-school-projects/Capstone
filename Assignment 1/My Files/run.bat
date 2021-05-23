@@ -1,0 +1,1 @@
+java -jar c:target\example1-0.0.1-SNAPSHOT.jar
